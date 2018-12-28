@@ -1,23 +1,20 @@
-import {Team} from './team';
+import {Tournament} from './tournament';
 import {Pools} from '../pools/mock-pool';
+import {Teams} from '../teams/mock-team';
 
-export const Teams: Team[] = [
+export const Tournaments: Tournament[] = [
     {
         id: 0,
-        name: "Usc GR",
+        name: 'Tournois U-11',
         pool: Pools[0],
+        team: Teams[0],
         created: new Date()
     },
     {
         id: 1,
-        name: "Usc FD",
-        pool: Pools[1],
-        created: new Date()
-    },
-    {
-        id: 2,
-        name: "Usc FD",
-        pool: Pools[2],
+        name: 'Tournois U-13',
+        pool: Pools[0],
+        team: Teams[0],
         created: new Date()
     },
 ];

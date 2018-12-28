@@ -1,0 +1,37 @@
+<div class="container mt-5 mb-5">
+    <div *ngIf="team" class="row">
+        <div class="col-sm-8 offset-sm-2">
+            <h2 class="header center">{{ team.name }}</h2>
+            <div class="card ">
+                <div class="card-body">
+                    <table class="bordered striped">
+                        <tbody>
+                        <tr>
+                            <td>Nom</td>
+                            <td><strong>{{ team.name }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Id</td>
+                            <td><strong>{{ team.id }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Poule</td>
+                            <td><strong>{{ team.pool.name }}</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Date de création</td>
+                            <td><em>{{ team.created | date:"dd/MM/yyyy" }}</em></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn" (click)="goBack()">Retour</a>
+                    <a class="waves-effect waves-light btn" (click)="goEdit(team)">Editer</a>
+                    <a (click)="delete(team)">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h4 *ngIf='!team' class="center">Aucun pokémon à afficher !</h4>

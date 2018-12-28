@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+
+    firebase: {
+        apiKey: 'AIzaSyDtvjiV9Xc2Z5T3ER9RWruJKASZNV5ShSs',
+        authDomain: 'soccer-tournament.firebaseapp.com',
+        databaseURL: 'https://soccer-tournament.firebaseio.com',
+        projectId: 'soccer-tournament',
+        storageBucket: 'soccer-tournament.appspot.com',
+        messagingSenderId: '397017422121'
+    },
 };
 
 /*

@@ -1,0 +1,25 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let tournament of tournaments">
+        <th scope="row">{{tournament.id}}</th>
+        <td>{{tournament.name}}</td>
+        <!--<td (click)="selectTeam(team)">Details</td>-->
+        <!--<td (click)="goEdit(team)">Edit</td>-->
+        <!--<td (click)="delete(team)">Supprimer</td>-->
+        <td><span class="btn btn-primary"><i class="fas fa-tv"></i> TV Mode</span></td>
+        <td (click)="selctTournament(tournament)"><span class="btn btn-success">Details</span></td>
+        <td><span class="btn btn-secondary">Editer</span></td>
+        <td><span class="btn btn-danger">Supprimer</span></td>
+    </tr>
+    </tbody>
+</table>

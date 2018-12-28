@@ -1,0 +1,28 @@
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Poule</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let team of teams">
+        <th scope="row">{{team.id}}</th>
+        <td>{{team.name}}</td>
+        <td>{{team.pool.name}}</td>
+        <td (click)="selectTeam(team)">
+            <span class="btn btn-success">Details</span>
+        </td>
+        <td (click)="goEdit(team)">
+            <span class="btn btn-secondary">Editer</span>
+        </td>
+        <td (click)="delete(team)">
+            <span class="btn btn-danger">Supprimer</span>
+        </td>
+    </tr>
+    </tbody>
+</table>

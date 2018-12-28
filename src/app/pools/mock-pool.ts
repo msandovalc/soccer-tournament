@@ -1,22 +1,44 @@
-import {Team} from './team';
+import {Pool} from './pool';
 
-export const Teams: Team[] = [
+export const Pools: Pool[] = [
     {
         id: 0,
-        name: "Usc GR",
-        pool: ["Poule A"],
+        name: "Poule A",
         created: new Date()
     },
     {
         id: 1,
-        name: "Usc FD",
-        pool: ["Poule B"],
+        name: "Poule B",
         created: new Date()
     },
     {
         id: 2,
-        name: "Usc FD",
-        pool: ["Poule C"],
+        name: "Poule C",
+        created: new Date()
+    },
+    {
+        id: 3,
+        name: "Poule D",
+        created: new Date()
+    },
+    {
+        id: 4,
+        name: "Poule E",
+        created: new Date()
+    },
+    {
+        id: 5,
+        name: "Poule F",
+        created: new Date()
+    },
+    {
+        id: 6,
+        name: "Poule G",
+        created: new Date()
+    },
+    {
+        id: 7,
+        name: "Poule H",
         created: new Date()
     },
 ];
