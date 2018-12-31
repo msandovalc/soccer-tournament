@@ -7,14 +7,14 @@ import {Teams} from '../teams/mock-team';
 export class Tournament {
     id: number;
     name: string;
-    pool: Pool;
-    team: Team;
+    pool: Pool[];
+    team: Team[];
     created: Date;
 
     constructor(
         name: string = 'name',
-        pool: Pool = Pools[0],
-        team: Team = Teams[0],
+        pool: Pool[] = [Pools[0]],
+        team: Team[] = [Teams[0]],
         created: Date = new Date()) {
         this.name = name;
         this.pool = pool;
