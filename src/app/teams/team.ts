@@ -7,7 +7,7 @@ export class Team {
     id: number;
     name: string;
     pool: Pool;
-    tournament: Tournament;
+    tournament?: Tournament;
     created: Date;
 
     constructor(
