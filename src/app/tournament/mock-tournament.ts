@@ -7,7 +7,10 @@ export const Tournaments: Tournament[] = [
         id: 0,
         name: 'Tournois U-11',
         pool: Pools[0],
-        team: Teams[0],
+        team: [
+            Teams[0],
+            Teams[1]
+        ],
         created: new Date()
     },
     {
